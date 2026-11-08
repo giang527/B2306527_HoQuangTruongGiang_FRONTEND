@@ -96,7 +96,7 @@ export default {
             if (!reply) {
                 return false
             }
-            else this.$router.push({ name: "contactbook "});
+            else this.$router.push({ name: "contactbook" });
         }
     },
 };

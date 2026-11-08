@@ -45,7 +45,7 @@ export default {
             try {
                 await contactService.update(this.contact._id, data);
                 alert('Liên hệ được cập nhật thành công.');
-                this.$router.push({ name: "contactbook "});
+                this.$router.push({ name: "contactbook" });
             } catch (error) {
                 console.log(error);
             }
@@ -55,7 +55,7 @@ export default {
             if (confirm("Bạn muốn xóa Liên hệ này?")) {
                 try {
                     await contactService.delete(this.contact._id);
-                    this.$router.push({ name: "contactbook "});
+                    this.$router.push({ name: "contactbook" });
                 } catch (error) {
                     console.log(error);
                 }
